@@ -13,6 +13,72 @@
             <h1 class="name">Evgeny Kovalev</h1>
             <img class="photo" src="./src/photo-kovalev.png" alt="Photo Evgeny Kovalev" width="135" height="240">
         </header>
+        <main >
+            <section class="summary">
+                <h2 class="heading2">About me</h2>
+                <ul>
+                    <li>Prone to learn</li>
+                    <li>Diligent</li>
+                    <li>Gain experience</li>
+                    <li>Ability to prioritize</li>
+                    <li>Good communication skills</li>
+                    <li>My goal is to get a job in IT</li>
+                </ul>
+            </section>
+            <section class="experience">
+                <h2 class="heading2">Education and Work Experience</h2>
+                <ul>
+                    <li><b>RS School</b> <em>2021q3 (2021-present time)</em></li>
+                    <li><b>MIP</b> <em>Design engineer water supply and wastewater treatment systems (2014-2021)</em></li>
+                    <li><b>BNTU</b> <em>Faculty of Power Engineering (2009-2014)</em></li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2 class="heading2">Skills</h2>
+                <ul>
+                    <li><b>Russian</b> - native</li>
+                    <li><b>Belorussian</b> - native</li>
+                    <li><b>English</b> - Pre-Intermediate</Pre-Intermediate></li>
+                    <li><strong>HTML</strong> beginner</li>
+                    <li><strong>CSS</strong> beginner</li>
+                    <li><strong>Java Script</strong> beginner</li>
+                    <li><b>Git</b> beginner</li>
+                    <li><b>Visual Studio Code</b> beginner</li>
+                </ul>
+            </section>
+            <section class="code">
+                <h2 class="heading2">Code Sample</h2>
+                <pre><code>
+                    function getRandomElement(arr) {
+                        let randIndex = Math.floor(Math.random() * arr.length);
+                        return arr[randIndex];
+                      }
+
+                      let button = document.querySelector('.button');
+                      let phrase = document.querySelector('.phrase');
+                      let advice = document.querySelector('.advice');
+                      let image = document.querySelector('.image');
+
+                      button.addEventListener('click', function () {
+                        let randomElement = getRandomElement(phrases);
+                        smoothly(phrase, 'textContent', randomElement.text)
+                        smoothly(image, 'src', randomElement.image)
+
+                        if (randomElement.text.length > 40) {
+                          advice.style.fontSize = '33px';
+                        } else {
+                          advice.style.fontSize = '42px';
+                        }
+                      });
+                      for (let i=0;i<=2;i=i+1){
+                        smoothly(phrase, 'textContent', phrases[i].text);
+                        smoothly(image, 'src', phrases[i].image)
+                      }
+                    </code></pre>
+            </section>
+
+
+        </main>
     </div>
 </body>
 </html>
