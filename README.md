@@ -1,1 +1,1 @@
-https://wwwtyz.github.io/rsschool-cv/cv
+https://wwwtyz.github.io/rsschool-cv/
