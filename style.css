@@ -76,3 +76,32 @@ span {
   align-items: flex-start;
   flex-direction: column;
 }
+
+/*main*/
+.main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  background-color: #eeeeee;
+}
+
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 450px;
+  height: 250px;
+  margin: 15px 20px;
+  padding:  15px;
+
+  box-shadow: 4px 4px 5px #ffffff;
+}
