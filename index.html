@@ -9,61 +9,84 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="CV">
-        <header>
-            <h1 class="name">Evgeny Kovalev</h1>
-            <img class="photo" src="./src/photo-kovalev.png" alt="Photo Evgeny Kovalev" width="135" height="240">
-        </header>
-        <main >
-            <section class="summary">
-                <h2 class="heading2">About me</h2>
-                <ul>
-                    <li>Prone to learn</li>
-                    <li>Diligent</li>
-                    <li>Gain experience</li>
-                    <li>Ability to prioritize</li>
-                    <li>Good communication skills</li>
-                    <li>My goal is to get a job in IT</li>
-                </ul>
-            </section>
-            <section class="experience">
-                <h2 class="heading2">Education and Work Experience</h2>
-                <ul>
-                    <li><b>RS School</b> <em>2021q3 (2021-present time)</em></li>
-                    <li><b>MIP</b> <em>Design engineer water supply and wastewater treatment systems (2014-2021)</em></li>
-                    <li><b>BNTU</b> <em>Faculty of Power Engineering (2009-2014)</em></li>
-                </ul>
-            </section>
-            <section class="skills">
-                <h2 class="heading2">Skills</h2>
-                <ul>
-                    <li><b>Russian</b> - native</li>
-                    <li><b>Belorussian</b> - native</li>
-                    <li><b>English</b> - Pre-Intermediate</Pre-Intermediate></li>
-                    <li><strong>HTML</strong> beginner</li>
-                    <li><strong>CSS</strong> beginner</li>
-                    <li><strong>Java Script</strong> beginner</li>
-                    <li><b>Git</b> beginner</li>
-                    <li><b>Visual Studio Code</b> beginner</li>
-                </ul>
-            </section>
-            <section class="code">
-                <h2 class="heading2">Code Sample</h2>
-                <pre>
-                    <code>
-                        function getRandomElement(arr) {
-                            let randIndex = Math.floor(Math.random() * arr.length);
-                            return arr[randIndex];
-                     </code>
-                </pre>
-            </section>
-        </main>
-        <footer>
+    <header class="header">
+        <div class="header-info">
+            <div class="photo">
+                 <img  class="photo" src="/src/photo-kovalev.png" alt="photoKovalev">
+            </div>
+            <div class="name">
+                 <h1>Evgeny Kovalev</h1>
+                <div class="contacts">
+                    <a href="//t.me/wwwtyz" title="Send message" target="_blank">
+                        <img class="logo" src="/src/svg/telegram.svg" alt="Telegram">Telegram
+                    </a>
+                    <span>
+                        <img class="logo" src="/src/svg/discord.svg" alt="Discord">Discord: Evgeny Kovalev#5309
+                    </span>
+                    <a href="mailto:wwwtyz@tut.by" target="_blank" title="Send message">
+                        <img class="logo" src="/src/svg/email.svg" alt="Email">Email
+                    </a>
+                    <a href="tel:+375259969912" target="_blank" title="Call">
+                        <img class="logo" src="/src/svg/phone.svg" alt="Phone"> +375259969912
+                    </a>
+                 </div>
+             </div>
+         </div>
+    </header>
+     <main>
+        <section class="summary">
+            <h2 class="heading2">About me</h2>
+            <ul>
+                <li>Prone to learn</li>
+                <li>Diligent</li>
+                <li>Gain experience</li>
+                <li>Ability to prioritize</li>
+                <li>Good communication skills</li>
+                <li>My goal is to get a job in IT</li>
+            </ul>
+        </section>
+        <section class="experience">
+            <h2 class="heading2">Education and Work Experience</h2>
+             <ul>
+                <li><b>RS School</b> <em>2021q3 (2021-present time)</em></li>
+                <li><b>MIP</b> <em>Design engineer water supply and wastewater treatment systems (2014-2021)</em></li>
+                <li><b>BNTU</b> <em>Faculty of Power Engineering (2009-2014)</em></li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2 class="heading2">Skills</h2>
+             <ul>
+                <li><b>Russian</b> - native</li>
+                <li><b>Belorussian</b> - native</li>
+                <li><b>English</b> - Pre-Intermediate</Pre-Intermediate></li>
+                <li><strong>HTML</strong> beginner</li>
+                <li><strong>CSS</strong> beginner</li>
+                <li><strong>Java Script</strong> beginner</li>
+                <li><b>Git</b> beginner</li>
+                <li><b>Visual Studio Code</b> beginner</li>
+            </ul>
+        </section>
+        <section class="code">
+            <h2 class="heading2">Code Sample</h2>
+                <code>
+                     function getRandomElement(arr) {
+                        let randIndex = Math.floor(Math.random() * arr.length);
+                         return arr[randIndex];
+                </code>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
             <a href="https://rs.school/js/">
                 <img src="https://app.rs.school/static/images/logo-rsschool3.png" alt="RS School" style="height: 30px;"></a>
-            <a href="https://github.com/wwwtyz" title="My GitHub account">My GitHub</a>
-            <p class="date">2021</p>
-        </footer>
-    </div>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/wwwtyz">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" title="My GitHub account" style="height: 30px;">My GitHub</a>
+        </div>
+        <div class="footer">
+             <p class="date">2021</p>
+         </div>
+    </footer>
 </body>
 </html>
